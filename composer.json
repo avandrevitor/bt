@@ -1,0 +1,23 @@
+{
+    "require":{
+        "fabpot/php-cs-fixer": "^1.10"
+    },
+    "require-dev":{
+        "phpunit/phpunit":"*",
+        "phploc/phploc":"*",
+        "pdepend/pdepend":"*",
+        "phpmd/phpmd":"*",
+        "sebastian/phpcpd":"*",
+        "phing/phing":"*"
+    },
+    "autoload":{
+        "psr-0":{ 
+            "BT":"src"
+        }
+    },
+    "autoload-dev":{
+        "prs-0":{ 
+            "BT":"test"
+        }
+    }
+}

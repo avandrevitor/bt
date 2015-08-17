@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="build" description="Runing Tools QA" name="BT">
+    
+    <!-- Clean Enviroment -->
+    <target name="clean">
+        <delete dir="./build"/>
+    </target>
+    
+    <!-- Prepare Enviroment -->
+    <target depends="clean" name="prepare">
+        <echo msg="Marking directory ./build"/>
+        <mkdir dir="./build"/>
+    </target>
+    
+    <!-- PHPUnit Tests -->
+    <target name="phpunit">
+        <exec checkreturn="true"
+            executable="${project.basedir}/vendor/bin/phpunit" passthru="true">
+            <arg line="--configuration ${project.basedir}/phpunit.xml"/>
+            <arg line="--coverage-html ${project.basedir}/build/coverage"/>
+        </exec>
+    </target>
+    
+    
+    
+    
+    <!-- Main Task -->
+    <target depends="prepare,phpunit" name="build">
+        <echo msg="Building Project ... "/>
+    </target>
+    
+
+</project>
