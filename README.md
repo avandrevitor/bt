@@ -1,6 +1,7 @@
 # bt
 [![Build Status](https://travis-ci.org/avandrevitor/bt.svg?branch=master)](https://travis-ci.org/avandrevitor/bt)
 [![Code Climate](https://codeclimate.com/github/avandrevitor/bt/badges/gpa.svg)](https://codeclimate.com/github/avandrevitor/bt)
+[![Test Coverage](https://codeclimate.com/github/avandrevitor/bt/badges/coverage.svg)](https://codeclimate.com/github/avandrevitor/bt/coverage)
 
 Benchmarking Tools
 
