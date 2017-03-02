@@ -1,23 +1,35 @@
 {
-    "require":{
-        "fabpot/php-cs-fixer": "^1.10"
-    },
-    "require-dev":{
-        "phpunit/phpunit":"*",
-        "phploc/phploc":"*",
-        "pdepend/pdepend":"*",
-        "phpmd/phpmd":"*",
-        "sebastian/phpcpd":"*",
-        "phing/phing":"*"
-    },
+    "name": "avandrevitor/bt",
+    "description": "Simple tool to benchmark",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andre Vitor Miranda",
+            "email": "avandrevitor@gmail.com"
+        }
+    ],
+    "version":"0.1.0",
+    "minimum-stability": "stable",
     "autoload":{
-        "psr-0":{ 
-            "BT":"src"
+        "psr-4":{
+            "BT\\":"src/BT"
         }
     },
     "autoload-dev":{
-        "prs-0":{ 
-            "BT":"test"
+        "prs-4":{
+            "BT\\":"tests/src/BT"
         }
+    },
+    "require":{},
+    "require-dev": {
+        "phpunit/phpunit": "^6.0",
+        "phing/phing": "^2.16",
+        "phploc/phploc": "^3.0",
+        "theseer/phpdox": "dev-master",
+        "pdepend/pdepend": "^2.5",
+        "phpmd/phpmd": "^2.6",
+        "squizlabs/php_codesniffer": "^2.8",
+        "sebastian/phpcpd": "^3.0",
+        "phpunit/php-code-coverage": "^5.0"
     }
 }

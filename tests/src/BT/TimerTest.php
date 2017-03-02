@@ -1,7 +1,7 @@
 <?php
 namespace BT;
 
-class TimerTest extends \PHPUnit_Framework_TestCase
+class TimerTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Timer
@@ -75,6 +75,7 @@ class TimerTest extends \PHPUnit_Framework_TestCase
     public function testDiffBetweenPoints()
     {
         $this->object->start();
+        sleep(1);
         $this->object->stop();
         
         $this->assertInternalType("float", $this->object->diffBetweenPoints());

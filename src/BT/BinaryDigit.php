@@ -56,9 +56,8 @@ class BinaryDigit
             if(($bytes >= $size)){
                 $this->symbol = $measures[$head][0];
                 $this->size = (float) round(($bytes / $size), $precision);
-            }else{
-                continue;
             }
+            continue;
             
         }
     }

@@ -1,6 +1,6 @@
 <?php namespace BT;
 
-class BinaryDigitTest extends \PHPUnit_Framework_TestCase
+class BinaryDigitTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var BinaryDigit

@@ -1,6 +1,6 @@
 <?php namespace BT;
 
-class MemoryTest extends \PHPUnit_Framework_TestCase
+class MemoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Memory
